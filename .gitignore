@@ -34,5 +34,5 @@ www-test/
 .metadata
 .settings
 
-.idea
+.idea/
 *.iml
