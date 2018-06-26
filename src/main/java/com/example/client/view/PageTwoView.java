@@ -27,7 +27,7 @@ public class PageTwoView extends Composite implements PageTwoPresenter.Display {
 	public Label getouputTextLabel() {
 		return outputTextLabel;
 	}
-	
+
 	@Override
 	public Widget asWidget() {
 		return this;

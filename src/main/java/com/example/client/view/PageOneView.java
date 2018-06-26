@@ -27,7 +27,7 @@ public class PageOneView extends Composite implements PageOnePresenter.Display {
 	TextBox inputText;
 	@UiField
 	Button submitButton;
-	
+
 	@Override
 	public Widget asWidget() {
 		return this;

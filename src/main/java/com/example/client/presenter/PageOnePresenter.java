@@ -28,8 +28,8 @@ public class PageOnePresenter implements Presenter {
 	}
 
 	private void bind() {
-		this.display.getSubmitButtonClickHandler().addClickHandler(
-				new ClickHandler() {
+		this.display.getSubmitButtonClickHandler()
+				.addClickHandler(new ClickHandler() {
 					public void onClick(ClickEvent event) {
 						doValueVerify();
 					}

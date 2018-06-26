@@ -33,3 +33,6 @@ www-test/
 .project
 .metadata
 .settings
+
+.idea
+*.iml
