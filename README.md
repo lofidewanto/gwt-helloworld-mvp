@@ -2,7 +2,12 @@ A "Hello, World!" MVP for GWT
 =============================
 
 ## Adding GWT Boot
-This example uses GWT Boot: https://github.com/gwtboot/gwt-boot-samples
+
+The forked example is updated with following points: 
+
+- This example uses GWT Boot: https://github.com/gwtboot/gwt-boot-samples
+
+## Introduction
 
 After going through multiple documents online for GWT and reading upon the
 recommended MVP pattern for GWT, I found out that setting up the amount of 
