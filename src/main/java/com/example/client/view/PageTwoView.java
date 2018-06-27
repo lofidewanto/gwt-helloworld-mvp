@@ -32,4 +32,5 @@ public class PageTwoView extends Composite implements PageTwoPresenter.Display {
 	public Widget asWidget() {
 		return this;
 	}
+
 }

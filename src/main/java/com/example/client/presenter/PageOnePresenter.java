@@ -10,6 +10,7 @@ import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
 
 public class PageOnePresenter implements Presenter {
+
 	public interface Display {
 		HasClickHandlers getSubmitButtonClickHandler();
 
@@ -19,6 +20,7 @@ public class PageOnePresenter implements Presenter {
 	}
 
 	private final Display display;
+
 	private final HandlerManager eventBus;
 
 	public PageOnePresenter(HandlerManager eventBus, Display display) {
@@ -37,7 +39,7 @@ public class PageOnePresenter implements Presenter {
 	}
 
 	@Override
-	public void go(HasWidgets container) {
+	public void start(HasWidgets container) {
 		container.clear();
 		container.add(display.asWidget());
 	}
@@ -48,4 +50,5 @@ public class PageOnePresenter implements Presenter {
 			eventBus.fireEvent(new PageOneEvent(value));
 		}
 	}
+
 }

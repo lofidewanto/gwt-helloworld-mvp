@@ -15,6 +15,6 @@ public class HelloWorldMvp implements EntryPoint {
 	public void onModuleLoad() {
 		HandlerManager eventBus = new HandlerManager(null);
 		AppController appViewer = new AppController(eventBus);
-		appViewer.go(RootPanel.get());
+		appViewer.start(RootPanel.get());
 	}
 }

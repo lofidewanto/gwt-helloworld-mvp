@@ -25,6 +25,7 @@ public class PageOneView extends Composite implements PageOnePresenter.Display {
 
 	@UiField
 	TextBox inputText;
+
 	@UiField
 	Button submitButton;
 
@@ -42,4 +43,5 @@ public class PageOneView extends Composite implements PageOnePresenter.Display {
 	public HasValue<String> getinputTextValue() {
 		return inputText;
 	}
+
 }

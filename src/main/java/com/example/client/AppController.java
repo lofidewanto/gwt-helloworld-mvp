@@ -37,11 +37,11 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 		History.newItem("pagetwo", false);
 		Presenter presenter = new PageTwoPresenter(eventBus, new PageTwoView(),
 				value);
-		presenter.go(container);
+		presenter.start(container);
 	}
 
 	@Override
-	public void go(HasWidgets container) {
+	public void start(HasWidgets container) {
 		this.container = container;
 
 		if ("".equals(History.getToken())) {
@@ -61,7 +61,7 @@ public class AppController implements Presenter, ValueChangeHandler<String> {
 					pageOneView = new PageOneView();
 
 				}
-				new PageOnePresenter(eventBus, pageOneView).go(container);
+				new PageOnePresenter(eventBus, pageOneView).start(container);
 			}
 		}
 

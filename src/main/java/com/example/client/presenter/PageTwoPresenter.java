@@ -6,6 +6,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 
 public class PageTwoPresenter implements Presenter {
+
 	public interface Display {
 		Label getouputTextLabel();
 
@@ -13,7 +14,9 @@ public class PageTwoPresenter implements Presenter {
 	}
 
 	private final Display display;
+
 	private final HandlerManager eventBus;
+
 	private final String value;
 
 	public PageTwoPresenter(HandlerManager eventBus, Display display,
@@ -26,8 +29,9 @@ public class PageTwoPresenter implements Presenter {
 	}
 
 	@Override
-	public void go(HasWidgets container) {
+	public void start(HasWidgets container) {
 		container.clear();
 		container.add(display.asWidget());
 	}
+
 }
